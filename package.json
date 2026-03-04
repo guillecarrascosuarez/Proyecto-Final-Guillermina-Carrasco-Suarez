@@ -12,7 +12,8 @@
     "formato": "prettier . --write",
     "pruebas": "vitest run",
     "pruebas:cobertura": "vitest run --coverage",
-    "verificar:cobertura": "node scripts/check-coverage.js"
+    "verificar:cobertura": "node scripts/check-coverage.js",
+    "seguridad:antipatrones": "node scripts/verificar_antipatrones.js"
   },
   "dependencies": {},
   "devDependencies": {
