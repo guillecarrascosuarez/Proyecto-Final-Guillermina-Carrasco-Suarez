@@ -1,4 +1,3 @@
-
 import fs from "node:fs";
 import path from "node:path";
 
@@ -13,7 +12,8 @@ const REGLAS = [
   {
     id: "NO_INNERHTML",
     patron: /\.innerHTML\s*=/,
-    mensaje: "Se detectó asignación a innerHTML. Puede facilitar XSS si se usa con datos no controlados.",
+    mensaje:
+      "Se detectó asignación a innerHTML. Puede facilitar XSS si se usa con datos no controlados.",
   },
   {
     id: "NO_DANGEROUSLY_SET",
@@ -75,7 +75,7 @@ function main() {
     }
 
     console.error(
-      "Sugerencia: eliminá el anti-patrón o justificá el caso y aplicá mitigaciones (sanitización/validación)."
+      "Sugerencia: eliminá el anti-patrón o justificá el caso y aplicá mitigaciones (sanitización/validación).",
     );
     process.exit(1);
   }

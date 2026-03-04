@@ -1,7 +1,9 @@
 # Pipeline de CI (Continuous Integration)
 
 ## Objetivo
+
 Asegurar calidad mínima antes de aceptar cambios:
+
 - Lint (estática)
 - Formato consistente
 - Tests automatizados + cobertura
@@ -9,16 +11,20 @@ Asegurar calidad mínima antes de aceptar cambios:
 - Artifacts para auditoría
 
 ## Workflow
+
 Archivo: `.github/workflows/ci.yml`
 
 ### Eventos
+
 - `pull_request`: valida cambios antes de mergear
 - `push` a `main`: valida el branch principal
 
 ### Matriz
+
 Se corre en Node 20 y 22 para detectar incompatibilidades.
 
 ## Acciones prácticas (reproducibles)
+
 En local, correr lo mismo que CI:
 
 ```bash
@@ -31,6 +37,7 @@ npm run build
 ```
 
 ## Coverage gate
+
 Se implementa un umbral mínimo (80% líneas) con `scripts/check-coverage.js`.
 Esto evita que la calidad disminuya silenciosamente.
 

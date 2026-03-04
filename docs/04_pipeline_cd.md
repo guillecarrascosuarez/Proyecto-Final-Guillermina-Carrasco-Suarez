@@ -1,12 +1,15 @@
 # Pipeline de CD (Continuous Deployment) a GitHub Pages
 
 ## Objetivo
+
 Desplegar automáticamente el sitio estático **solo** si el CI fue exitoso.
 
 ## Workflow
+
 Archivo: `.github/workflows/cd-pages.yml`
 
 ### Estrategia
+
 - Se dispara con `workflow_run` cuando el workflow **CI** termina
 - Si `conclusion == success`:
   - corre `npm ci`
@@ -14,17 +17,21 @@ Archivo: `.github/workflows/cd-pages.yml`
   - publica `dist/` en GitHub Pages
 
 ## Activación en GitHub
+
 1. `Settings → Pages`
 2. “Build and deployment” → **GitHub Actions**
 3. Push a `main` y revisar Actions
 
 ## Acción práctica (reproducible)
+
 Generar el build local para ver qué se despliega:
+
 ```bash
 npm ci
 npm run build
 npm run preview
 ```
+
 Luego visitar `http://localhost:4173`.
 
 ## Relación con el laboratorio de seguridad
