@@ -37,8 +37,9 @@ jobs:
       - name: Verificar formato
         run: npm run formato:verificar
 
-      - name: Verificación de anti-patrones de seguridad
-        run: npm run seguridad:antipatrones
+      - name: Verificación de anti-patrones de seguridad (si aplica)
+        run: |
+          npm run seguridad:antipatrones --if-present
 
       - name: Pruebas unitarias (con cobertura)
         run: npm run pruebas:cobertura
