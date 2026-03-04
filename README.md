@@ -44,7 +44,7 @@ npm run formato:verificar
 npm run pruebas:cobertura
 npm run verificar:cobertura
 
-# 5) build 
+# 5) build
 npm run build
 
 # 6) previsualizar build
