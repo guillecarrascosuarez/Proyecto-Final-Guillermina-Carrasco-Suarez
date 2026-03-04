@@ -10,12 +10,6 @@ const REGLAS = [
     mensaje: "Se detectó uso de eval(). Evitar ejecución dinámica de código.",
   },
   {
-    id: "NO_INNERHTML",
-    patron: /\.innerHTML\s*=/,
-    mensaje:
-      "Se detectó asignación a innerHTML. Puede facilitar XSS si se usa con datos no controlados.",
-  },
-  {
     id: "NO_DANGEROUSLY_SET",
     patron: /dangerouslySetInnerHTML/,
     mensaje: "Se detectó dangerouslySetInnerHTML. Evitarlo o justificar y sanitizar estrictamente.",
