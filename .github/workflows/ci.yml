@@ -3,7 +3,7 @@ name: Integración Continua (CI)
 on:
   pull_request:
   push:
-    branches: ["main"]
+    branches: ["main", "laboratorio-seguridad"]
 
 concurrency:
   group: ci-${{ github.ref }}
