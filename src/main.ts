@@ -20,7 +20,7 @@ app.innerHTML = `
         <li>CD: Deploy a Pages post-CI</li>
       </ul>
     </section>
-document.body.innerHTML = "prueba";
+document.body.innerHTML = "prueba de despliegue";
     <section style="margin-top: 18px;">
       <h2>Docs</h2>
       <p>Leé el paso a paso en la carpeta <code>docs/</code>.</p>
