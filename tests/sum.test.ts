@@ -3,7 +3,7 @@ import { sum } from "../src/sum";
 
 describe("sum", () => {
   it("adds two numbers", () => {
-    expect(sum(2, 3)).toBe(5);
+    expect(sum(4, 6)).toBe(10);
   });
 
   it("works with negatives", () => {
