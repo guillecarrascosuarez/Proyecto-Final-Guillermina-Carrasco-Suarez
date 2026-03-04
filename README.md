@@ -33,9 +33,6 @@ git --version
 # 1) instalar dependencias
 npm install
 
-# (recomendado) commitá package-lock.json para máxima reproducibilidad
-# git add package-lock.json && git commit -m "chore: agregar lockfile"
-
 # 2) desarrollo
 npm run dev
 
