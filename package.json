@@ -1,0 +1,34 @@
+{
+  "name": "Trabajo práctico final",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint .",
+    "formato:verificar": "prettier . --check",
+    "formato": "prettier . --write",
+    "pruebas": "vitest run",
+    "pruebas:cobertura": "vitest run --coverage",
+    "verificar:cobertura": "node scripts/check-coverage.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "vitest": "^2.0.5",
+    "@vitest/coverage-v8": "^2.0.5",
+    "semantic-release": "^24.1.2",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.0.7",
+    "@semantic-release/commit-analyzer": "^12.0.0",
+    "@semantic-release/release-notes-generator": "^13.0.0"
+  }
+}
