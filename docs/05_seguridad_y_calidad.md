@@ -1,22 +1,26 @@
 # Seguridad y calidad
 
 ## Dependency Review
+
 Workflow: `.github/workflows/dependency-review.yml`
 
 En PR, inspecciona cambios de dependencias y falla si se detectan vulnerabilidades severas.
 
 ## Dependabot
+
 Archivo: `.github/dependabot.yml`
 
 Crea PRs automáticas semanales para actualizar dependencias y reducir deuda técnica.
 
 ## CodeQL (SAST)
+
 Workflow: `.github/workflows/codeql.yml`
 
 Ejecuta análisis estático y reporta hallazgos en la pestaña Security.
 Incluye `schedule` semanal para reevaluar con nuevas reglas.
 
 ## Buenas prácticas incorporadas
+
 - `npm ci` para instalaciones determinísticas
 - Matriz de Node versions
 - `concurrency` para cancelar ejecuciones redundantes
@@ -55,3 +59,4 @@ No se incluyen ejemplos de explotación ni código diseñado para ser utilizado 
 
 ```bash
 git checkout laboratorio-seguridad
+```

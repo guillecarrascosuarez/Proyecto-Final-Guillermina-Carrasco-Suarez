@@ -18,6 +18,7 @@ Este repositorio es un trabajo práctico sobre **CI/CD con GitHub Actions** apli
 - **npm** (incluido con Node)
 
 ### Verificar versiones
+
 ```bash
 node -v
 npm -v
@@ -65,7 +66,6 @@ npm run preview
 
 ---
 
-
 ## Documentación
 
 La documentación completa del proyecto se encuentra en la carpeta `docs/` y describe tanto los aspectos conceptuales como prácticos del pipeline CI/CD implementado.
@@ -79,7 +79,7 @@ La documentación completa del proyecto se encuentra en la carpeta `docs/` y des
 - Decisiones técnicas: `docs/07_decisiones.md`
 - Reproducir el proyecto en local: `docs/08_reproducir_en_local.md`
 - Bitácora de investigación y desarrollo: `docs/09_bitacora.md`
-- **Laboratorio de seguridad:** `docs/10_laboratorio_seguridad.md` *(rama `laboratorio-seguridad`)*
+- **Laboratorio de seguridad:** `docs/10_laboratorio_seguridad.md` _(rama `laboratorio-seguridad`)_
 
 ---
 

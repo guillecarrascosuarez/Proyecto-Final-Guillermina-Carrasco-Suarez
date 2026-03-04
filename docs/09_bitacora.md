@@ -1,4 +1,3 @@
-
 # Bitácora de investigación y desarrollo
 
 Esta bitácora describe el proceso seguido para investigar, diseñar e implementar el sistema de CI/CD presentado en este repositorio.  
@@ -27,7 +26,7 @@ Finalmente se eligió **GitHub Actions** porque:
 
 - Está integrado directamente con los repositorios
 - Permite definir pipelines como código
-- Tiene una sintaxis relativamente simple 
+- Tiene una sintaxis relativamente simple
 
 Durante esta etapa también se analizaron ejemplos reales de repositorios open source que utilizan CI/CD.
 
@@ -170,7 +169,7 @@ Se priorizó:
 
 El objetivo fue que **cualquier lector pueda clonar el repositorio y reproducir el proceso completo**.
 
-Se utilizó **Gemini** para hacer los markdowns más estéticos con encabezados jerárquicos, negritas, cursivas, etc. 
+Se utilizó **Gemini** para hacer los markdowns más estéticos con encabezados jerárquicos, negritas, cursivas, etc.
 
 ---
 

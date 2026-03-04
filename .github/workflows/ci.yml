@@ -37,6 +37,9 @@ jobs:
       - name: Verificar formato
         run: npm run formato:verificar
 
+      - name: Verificación de anti-patrones de seguridad
+        run: npm run seguridad:antipatrones
+
       - name: Pruebas unitarias (con cobertura)
         run: npm run pruebas:cobertura
 
@@ -46,7 +49,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Subir artefacto: cobertura
+      - name: "Subir artefacto: cobertura"
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -54,7 +57,7 @@ jobs:
           path: coverage/
           if-no-files-found: warn
 
-      - name: Subir artefacto: build
+      - name: "Subir artefacto: build"
         if: success()
         uses: actions/upload-artifact@v4
         with:

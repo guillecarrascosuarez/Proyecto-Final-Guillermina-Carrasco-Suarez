@@ -1,19 +1,24 @@
 # Decisiones técnicas (ADR liviano)
 
 ## Stack
+
 - **Node + TypeScript**: ecosistema común en industria y fácil de reproducir
 - **Vite**: build rápido para demo y salida estática (`dist/`) ideal para Pages
 - **Vitest**: tests + coverage con buena performance
 
 ## CI con matriz
+
 Se elige Node 20/22 para:
+
 - compatibilidad
 - detección temprana de issues por versión
 
 ## Umbral de cobertura
+
 Se incorpora como "quality gate" para que los tests no queden decorativos.
 
 ## Seguridad “de industria”
+
 Se suman CodeQL + dependency review + dependabot por relevancia real en repos modernos.
 
 ---
