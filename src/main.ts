@@ -5,7 +5,7 @@ if (!app) throw new Error("Missing #app container");
 
 app.innerHTML = `
   <main style="font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 880px; margin: 40px auto; padding: 0 16px;">
-    <h1>CI/CD Excellence Demo</h1>
+    <h1>CI/CD test</h1>
     <p>
       Este sitio se construye con <strong>Vite + TypeScript</strong> y se despliega con <strong>GitHub Actions</strong> a
       <strong>GitHub Pages</strong> automáticamente cuando el CI pasa.
