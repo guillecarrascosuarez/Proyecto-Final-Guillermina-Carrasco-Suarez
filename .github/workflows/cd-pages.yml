@@ -2,7 +2,7 @@ name: Despliegue Continuo (CD) - GitHub Pages
 
 on:
   workflow_run:
-    workflows: ["CI"]
+    workflows: ["Integración Continua (CI)"]
     types: [completed]
 
 permissions:
