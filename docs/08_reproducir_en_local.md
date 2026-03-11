@@ -41,11 +41,3 @@ npm run verificar:cobertura
 npm run build
 npm run preview
 ```
-
-## 7) (Opcional) Docker
-
-```bash
-docker compose up --build
-```
-
-Abrir `http://localhost:8080`.
